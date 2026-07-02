@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SchedScope Simulator</title>
+
+    <link rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="background">
+
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+
+</div>
+
+<div class="container">
+
+    <h1>SchedScope</h1>
+
+    <p class="subtitle">
+        CPU Scheduling Algorithm Simulator
+    </p>
+
+    <!-- SETTINGS -->
+
+    <div class="glass-card">
+
+        <h2>Simulation Settings</h2>
+
+        <div class="controls">
+
+            <div>
+
+                <label>Algorithm</label>
+
+                <select id="algorithm">
+
+                    <option value="FCFS">
+                        First Come First Serve
+                    </option>
+
+                    <option value="SJF">
+                        Shortest Job First
+                    </option>
+
+                    <option value="SRTF">
+                        Shortest Remaining Time First
+                    </option>
+
+                    <option value="RR">
+                        Round Robin
+                    </option>
+
+                    <option value="Priority">
+                        Priority (Non-Preemptive)
+                    </option>
+
+                    <option value="Priority Preemptive">
+                        Priority (Preemptive)
+                    </option>
+
+                </select>
+
+            </div>
+
+            <div id="quantumBox" style="display:none;">
+
+                <label>Time Quantum</label>
+
+                <input
+                    type="number"
+                    id="quantum"
+                    min="1"
+                    value="2">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- PROCESS TABLE -->
+
+    <div class="glass-card">
+
+        <h2>Processes</h2>
+
+        <table id="processTable">
+
+            <thead>
+
+                <tr>
+
+                    <th>PID</th>
+
+                    <th>Arrival Time</th>
+
+                    <th>Burst Time</th>
+
+                    <th id="priorityHeader" style="display:none;">
+                        Priority
+                    </th>
+
+                    <th>Delete</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>P1</td>
+
+                    <td>
+                        <input
+                            type="number"
+                            value="0"
+                            class="arrival">
+                    </td>
+
+                    <td>
+                        <input
+                            type="number"
+                            value="5"
+                            class="burst">
+                    </td>
+
+                    <td class="priorityCell" style="display:none;">
+                        <input
+                            type="number"
+                            value="1"
+                            class="priority">
+                    </td>
+
+                    <td>
+
+                        <button class="deleteBtn">
+                            ❌
+                        </button>
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <div class="button-row">
+
+            <button id="addProcess">
+                + Add Process
+            </button>
+
+            <button id="simulate">
+                Run Simulation
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- METRICS -->
+
+    <div id="metricsSection" class="glass-card">
+
+        <h2>Performance Metrics</h2>
+
+        <div class="metrics-grid">
+
+            <div class="metric-card">
+
+                <h3>Average Waiting</h3>
+
+                <p id="avgWaiting">0</p>
+
+            </div>
+
+            <div class="metric-card">
+
+                <h3>Average Turnaround</h3>
+
+                <p id="avgTurnaround">0</p>
+
+            </div>
+
+            <div class="metric-card">
+
+                <h3>Average Response</h3>
+
+                <p id="avgResponse">0</p>
+
+            </div>
+
+            <div class="metric-card">
+
+                <h3>CPU Utilization</h3>
+
+                <p id="cpuUtil">0%</p>
+
+            </div>
+
+            <div class="metric-card">
+
+                <h3>Throughput</h3>
+
+                <p id="throughput">0</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- GANTT CHART -->
+
+    <div class="glass-card">
+
+        <h2>Animated Gantt Chart</h2>
+
+        <div id="ganttChart">
+
+        </div>
+
+    </div>
+
+    <!-- RESULT TABLE -->
+
+    <div class="glass-card">
+
+        <h2>Process Results</h2>
+
+        <table id="resultTable">
+
+            <thead>
+
+                <tr>
+
+                    <th>PID</th>
+                    <th>AT</th>
+                    <th>BT</th>
+                    <th>Priority</th>
+                    <th>CT</th>
+                    <th>WT</th>
+                    <th>TAT</th>
+                    <th>RT</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script
+src="{{ url_for('static', filename='js/app.js') }}">
+</script>
+
+</body>
+
+</html>

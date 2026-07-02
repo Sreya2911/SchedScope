@@ -1,19 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SchedScope</title>
+
+    <title>SchedScope | CPU Scheduling Simulator</title>
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
+    <div class="background">
+
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="blob blob3"></div>
+
+    </div>
+
+    <section class="hero">
+
+        <div class="glass-card">
+
+            <h1>SchedScope</h1>
+
+            <p class="tagline">
+                Visualize CPU Scheduling Algorithms beautifully.
+            </p>
+
+            <p class="description">
+                Compare and understand six CPU Scheduling Algorithms through
+                an interactive simulator featuring animated Gantt Charts,
+                performance metrics and real-time scheduling visualization.
+            </p>
+
+            <div class="features">
+
+                <!-- FCFS -->
+
+                <div class="feature">
+
+                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor">
+
+                        <rect x="4" y="6" width="16" height="3" rx="1"></rect>
+                        <rect x="4" y="11" width="12" height="3" rx="1"></rect>
+                        <rect x="4" y="16" width="8" height="3" rx="1"></rect>
+
+                    </svg>
+
+                    <p>FCFS</p>
+
+                </div>
+
+                <!-- SJF -->
+
+                <div class="feature">
+
+                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor">
+
+                        <line x1="6" y1="18" x2="6" y2="8"></line>
+                        <line x1="12" y1="18" x2="12" y2="5"></line>
+                        <line x1="18" y1="18" x2="18" y2="12"></line>
+
+                    </svg>
+
+                    <p>SJF</p>
+
+                </div>
+
+                <!-- SRTF -->
+
+                <div class="feature">
+
+                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor">
+
+                        <circle cx="12" cy="12" r="8"></circle>
+                        <path d="M12 8v5l3 2"></path>
+
+                    </svg>
+
+                    <p>SRTF</p>
+
+                </div>
+
+                <!-- Round Robin -->
+
+                <div class="feature">
+
+                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor">
+
+                        <path d="M7 7H3v4"></path>
+                        <path d="M3 11a8 8 0 0 1 13-5"></path>
+
+                        <path d="M17 17h4v-4"></path>
+                        <path d="M21 13a8 8 0 0 1-13 5"></path>
+
+                    </svg>
+
+                    <p>Round Robin</p>
+
+                </div>
+
+                <!-- Priority -->
+
+                <div class="feature">
+
+                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor">
+
+                        <path
+                            d="M12 3l2.2 4.5 5 .7-3.6 3.6.8 5.1L12 15.8l-4.4 2.4.8-5.1-3.6-3.6 5-.7L12 3z">
+                        </path>
+
+                    </svg>
+
+                    <p>Priority</p>
+
+                </div>
+
+                <!-- Priority Preemptive -->
+
+                <div class="feature">
+
+                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor">
+
+                        <path
+                            d="M13 2L4 14h6l-1 8 9-12h-6z">
+                        </path>
+
+                    </svg>
+
+                    <p>Priority Preemptive</p>
+
+                </div>
+
+            </div>
+
+            <a href="/simulator">
+
+                <button class="start-btn">
+
+                    Launch Simulator →
+
+                </button>
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        Developed with Flask • HTML • CSS • JavaScript
+
+    </footer>
+
 </body>
 
-<script src="{{ url_for('static', filename='js/app.js') }}"></script>
 </html>
