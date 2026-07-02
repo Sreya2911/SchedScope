@@ -11,6 +11,9 @@ Visualize, compare, and analyze CPU scheduling algorithms through an intuitive w
 [Installation](#installation) •
 [Project Structure](#project-structure)
 
+## Live Demo
+https://schedscope.onrender.com
+
 </div>
 
 ---
