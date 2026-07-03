@@ -100,7 +100,6 @@ python app.py
 ```
 
 Open:
-Open:
 
 ```
 http://127.0.0.1:5000
@@ -113,16 +112,11 @@ http://127.0.0.1:5000
 **Sreya S**
 
 - GitHub: https://github.com/Sreya2911
-- LinkedIn: *([Add your LinkedIn profile URL](https://www.linkedin.com/in/ssreya/))*
 - LinkedIn: https://www.linkedin.com/in/ssreya/
 
 ---
 
-<p align="center">
-<p align="center">
-
-Built to simplify the visualization of CPU Scheduling Algorithms.
-
+<p align-items="center">
 Built to simplify the visualization of CPU Scheduling Algorithms.
 </p>
 
