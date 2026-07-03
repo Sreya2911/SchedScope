@@ -5,7 +5,6 @@
 ### Interactive CPU Scheduling Algorithm Simulator
 
 Visualize and compare CPU scheduling algorithms through an intuitive web interface featuring animated Gantt charts and real-time performance metrics.
-Visualize and compare CPU scheduling algorithms through an intuitive web interface featuring animated Gantt charts and real-time performance metrics.
 
 🌐 **Live Demo:** https://schedscope.onrender.com
 
@@ -41,23 +40,11 @@ SchedScope is a web-based CPU Scheduling Simulator built using **Flask, Python, 
 - Process Management with Input Validation
 - Responsive Glassmorphism UI
 - Live Web Deployment
-- Interactive CPU Scheduling Simulator
-- Animated Gantt Chart Visualization
-- Real-time Scheduling Metrics
-- Process Management with Input Validation
-- Responsive Glassmorphism UI
-- Live Web Deployment
 
 ---
 
 ## Implemented Algorithms
 
-- First Come First Serve (FCFS)
-- Shortest Job First (SJF)
-- Shortest Remaining Time First (SRTF)
-- Round Robin (RR)
-- Priority Scheduling (Non-Preemptive)
-- Priority Scheduling (Preemptive)
 - First Come First Serve (FCFS)
 - Shortest Job First (SJF)
 - Shortest Remaining Time First (SRTF)
@@ -79,10 +66,6 @@ SchedScope is a web-based CPU Scheduling Simulator built using **Flask, Python, 
 
 ## Tech Stack
 
-- **Backend:** Flask, Python
-- **Frontend:** HTML5, CSS3, JavaScript
-- **Deployment:** Render
-- **Version Control:** Git & GitHub
 - **Backend:** Flask, Python
 - **Frontend:** HTML5, CSS3, JavaScript
 - **Deployment:** Render
@@ -116,7 +99,7 @@ http://127.0.0.1:5000
 
 ---
 
-<p align-items="center">
+<p style="text-align: center";>
 Built to simplify the visualization of CPU Scheduling Algorithms.
 </p>
 
