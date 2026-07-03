@@ -8,7 +8,6 @@ Visualize and compare CPU scheduling algorithms through an intuitive web interfa
 Visualize and compare CPU scheduling algorithms through an intuitive web interface featuring animated Gantt charts and real-time performance metrics.
 
 🌐 **Live Demo:** https://schedscope.onrender.com
-🌐 **Live Demo:** https://schedscope.onrender.com
 
 </div>
 
@@ -79,7 +78,6 @@ SchedScope is a web-based CPU Scheduling Simulator built using **Flask, Python, 
 ---
 
 ## Tech Stack
-## Tech Stack
 
 - **Backend:** Flask, Python
 - **Frontend:** HTML5, CSS3, JavaScript
@@ -92,7 +90,6 @@ SchedScope is a web-based CPU Scheduling Simulator built using **Flask, Python, 
 
 ---
 
-## Run Locally
 ## Run Locally
 
 ```bash
