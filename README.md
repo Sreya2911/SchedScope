@@ -95,7 +95,7 @@ http://127.0.0.1:5000
 **Sreya S**
 
 - GitHub: https://github.com/Sreya2911
-- LinkedIn: *(https://www.linkedin.com/in/ssreya/)*
+- LinkedIn: https://www.linkedin.com/in/ssreya/
 
 ---
 
