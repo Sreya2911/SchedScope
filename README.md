@@ -4,15 +4,9 @@
 
 ### Interactive CPU Scheduling Algorithm Simulator
 
-Visualize, compare, and analyze CPU scheduling algorithms through an intuitive web interface featuring animated Gantt charts and performance analytics.
+Visualize and compare CPU scheduling algorithms through an intuitive web interface featuring animated Gantt charts and real-time performance metrics.
 
-[Features](#features) •
-[Algorithms](#implemented-algorithms) •
-[Installation](#installation) •
-[Project Structure](#project-structure)
-
-## Live Demo
-https://schedscope.onrender.com
+🌐 **Live Demo:** https://schedscope.onrender.com
 
 </div>
 
@@ -20,44 +14,47 @@ https://schedscope.onrender.com
 
 ## Overview
 
-SchedScope is a web-based CPU Scheduling Algorithm Simulator designed to simplify the understanding of process scheduling concepts in Operating Systems.
+SchedScope is a web-based CPU Scheduling Simulator built using **Flask, Python, HTML, CSS, and JavaScript**. It provides an interactive way to understand how different CPU scheduling algorithms execute processes by visualizing execution order, Gantt charts, and scheduling metrics.
 
-The application provides an interactive environment where users can create processes, execute different scheduling algorithms, visualize execution through animated Gantt charts, and analyze scheduling performance using standard metrics.
+---
 
-Built with Flask and vanilla JavaScript, SchedScope focuses on combining educational value with a clean and modern user experience.
+## Screenshots
+
+<p align="center">
+<img src="screenshots/landing-page.png" width="48%">
+<img src="screenshots/initial-simulator.png" width="48%">
+</p>
+
+<p align="center">
+<img src="screenshots/chosen-process-and-input.png" width="48%">
+<img src="screenshots/gantt-and-metrics.png" width="48%">
+</p>
 
 ---
 
 ## Features
 
-- Interactive CPU scheduling simulator
-- Animated Gantt Chart visualization
-- Real-time scheduling execution
-- Process-wise execution table
-- Performance metrics dashboard
-- Responsive modern interface
-- Glassmorphism-inspired UI
-- Dynamic process creation and deletion
-- Input validation for process parameters
+- Interactive CPU Scheduling Simulator
+- Animated Gantt Chart Visualization
+- Real-time Scheduling Metrics
+- Process Management with Input Validation
+- Responsive Glassmorphism UI
+- Live Web Deployment
 
 ---
 
 ## Implemented Algorithms
 
-| Algorithm | Type |
-|-----------|------|
-| First Come First Serve (FCFS) | Non-Preemptive |
-| Shortest Job First (SJF) | Non-Preemptive |
-| Shortest Remaining Time First (SRTF) | Preemptive |
-| Round Robin (RR) | Preemptive |
-| Priority Scheduling | Non-Preemptive |
-| Priority Scheduling | Preemptive |
+- First Come First Serve (FCFS)
+- Shortest Job First (SJF)
+- Shortest Remaining Time First (SRTF)
+- Round Robin (RR)
+- Priority Scheduling (Non-Preemptive)
+- Priority Scheduling (Preemptive)
 
 ---
 
 ## Performance Metrics
-
-The simulator computes the following scheduling metrics:
 
 - Average Waiting Time
 - Average Turnaround Time
@@ -65,173 +62,31 @@ The simulator computes the following scheduling metrics:
 - CPU Utilization
 - Throughput
 
-These metrics allow users to compare the efficiency of different scheduling algorithms under identical workloads.
+---
+
+## Tech Stack
+
+- **Backend:** Flask, Python
+- **Frontend:** HTML5, CSS3, JavaScript
+- **Deployment:** Render
+- **Version Control:** Git & GitHub
 
 ---
 
-## Technology Stack
-
-### Frontend
-
-- HTML5
-- CSS3
-- JavaScript
-
-### Backend
-
-- Python
-- Flask
-
-### Development Tools
-
-- Visual Studio Code
-- Git
-- GitHub
-
----
-
-## Project Structure
-
-```text
-SchedScope/
-│
-├── scheduler/
-│   ├── process.py
-│   ├── metrics.py
-│   ├── fcfs.py
-│   ├── sjf.py
-│   ├── srtf.py
-│   ├── round_robin.py
-│   ├── priority.py
-│   └── priority_preemptive.py
-│
-├── static/
-│   ├── css/
-│   ├── js/
-│   └── images/
-│
-├── templates/
-│   ├── index.html
-│   └── simulator.html
-│
-├── app.py
-├── requirements.txt
-└── README.md
-```
-
----
-
-## Installation
-
-### Clone the repository
+## Run Locally
 
 ```bash
 git clone https://github.com/Sreya2911/SchedScope.git
-```
-
-### Navigate to the project
-
-```bash
 cd SchedScope
-```
-
-### Create a virtual environment (optional)
-
-Windows
-
-```bash
-python -m venv venv
-venv\Scripts\activate
-```
-
-Linux / macOS
-
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-
-### Install dependencies
-
-```bash
 pip install -r requirements.txt
-```
-
-### Run the application
-
-```bash
 python app.py
 ```
 
-Open your browser and visit
+Open:
 
 ```
 http://127.0.0.1:5000
 ```
-
----
-
-## Usage
-
-1. Select a scheduling algorithm.
-2. Add one or more processes.
-3. Enter arrival time, burst time, and priority (where applicable).
-4. Specify the time quantum for Round Robin.
-5. Run the simulation.
-6. Analyze the generated Gantt chart and scheduling metrics.
-
----
-
-## Screenshots
-
-> Screenshots will be added after deployment.
-
-Suggested screenshots:
-
-- Landing Page
-- Simulator Interface
-- Animated Gantt Chart
-- Performance Metrics Dashboard
-
----
-
-## Future Enhancements
-
-- Additional scheduling algorithms
-- Algorithm comparison mode
-- Export simulation results (CSV/PDF)
-- Dark and Light theme support
-- Learning module for scheduling concepts
-- Interactive ready queue visualization
-- Timeline playback controls
-
----
-
-## Learning Outcomes
-
-This project demonstrates practical implementation of:
-
-- CPU Scheduling Algorithms
-- Operating System Concepts
-- Flask Web Development
-- Client-Server Communication
-- RESTful Request Handling
-- JavaScript DOM Manipulation
-- Responsive Web Design
-- Data Visualization
-
----
-
-## Contributing
-
-Contributions, feature requests, and suggestions are welcome.
-
-If you would like to improve the project:
-
-1. Fork the repository.
-2. Create a feature branch.
-3. Commit your changes.
-4. Open a Pull Request.
 
 ---
 
@@ -240,10 +95,12 @@ If you would like to improve the project:
 **Sreya S**
 
 - GitHub: https://github.com/Sreya2911
-- LinkedIn: *(Add your LinkedIn profile here)*
+- LinkedIn: *([Add your LinkedIn profile URL](https://www.linkedin.com/in/ssreya/))*
 
 ---
 
-## License
+<p align="center">
 
-This project is released for educational and learning purposes.
+Built to simplify the visualization of CPU Scheduling Algorithms.
+
+</p>
