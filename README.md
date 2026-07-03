@@ -34,21 +34,6 @@ SchedScope is a web-based CPU Scheduling Simulator built using **Flask, Python, 
 SchedScope is a web-based CPU Scheduling Simulator built using **Flask, Python, HTML, CSS, and JavaScript**. It provides an interactive way to understand how different CPU scheduling algorithms execute processes by visualizing execution order, Gantt charts, and scheduling metrics.
 
 ---
-
-## Screenshots
-
-<p align="center">
-<img src="screenshots/landing-page.png" width="48%">
-<img src="screenshots/initial-simulator.png" width="48%">
-</p>
-
-<p align="center">
-<img src="screenshots/chosen-process-and-input.png" width="48%">
-<img src="screenshots/gantt-and-metrics.png" width="48%">
-</p>
-
----
-
 ## Features
 
 - Interactive CPU Scheduling Simulator
